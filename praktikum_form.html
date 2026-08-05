@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id"> 
+    <title>Form Pendaftaran SPMB</title>
+    <body>
+        <h1>Form Pendaftaran SPMB</h1>
+        <form>
+            <table>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required>Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan" required>Perempuan
+                </td>
+            </tr> 
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" required></textarea></td>
+            </tr> 
+            <tr>
+                <td>Program Studi</td>
+                <td>
+                    <select name="program_studi" required>
+                        <option value="">Pilih Program Studi</option>
+                        <option value="RPL">RPL</option>
+                        <option value="TKJ">TKJ</option>
+                        <option value="PG">PG</option>
+                    </select>
+                </td>
+            </tr> 
+           
+            <tr>
+           <td><label>Email</label></td>
+            <td><input type="email" name="email" required> </td>
+            </tr>
+            <tr>
+            <td><label>Nomor Telepon</label></td>
+            <td><input type="tel" name="nomor_telepon" required></td>
+            </tr>
+            <tr>
+            <td><label>Tanggal Lahir</label></td>
+            <td><input type="date" name="tanggal_lahir" required></td>
+            </tr>
+            <tr>
+            <td><label>Hobi</label></td>
+            <td>
+                <select name="hobi" required>
+                    <option value="">Pilih Hobi</option>
+                    <option value="Membaca">Membaca</option>
+                    <option value="Menulis">Menulis</option>
+                    <option value="Bersepeda">Bersepeda</option>
+                    <option value="Berenang">Berenang</option>
+                    <option value="Memasak">Memasak</option>
+                    <option value="Bermain Musik">Bermain Musik</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td><label>Mapel Yang Di Minati</label></td>
+            <td>
+                <input type="checkbox" name="mapel[]" value="Matematika">Matematika
+                <input type="checkbox" name="mapel[]" value="Bahasa Indonesia">Bahasa Indonesia
+                <input type="checkbox" name="mapel[]" value="Bahasa Inggris">Bahasa Inggris
+                <input type="checkbox" name="mapel[]" value="IPA">IPA
+            </td>
+            </tr>
+            <tr>
+            <td><label>Upload Berkas</label></td>
+            <td><input type="file" name="berkas" required></td>
+            </tr>
+            <tr>
+            <td colspan="2"><input type="submit" value="Submit"colspan="2"><input type="reset" value="Reset"></td>
+            </tr>
+            </table>
+            </form>
+    </body>
+    </html>
+       
